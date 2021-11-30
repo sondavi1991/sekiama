@@ -1,0 +1,47 @@
+.btn_green {
+  background-color: $second_green;
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  color: #fefefe;
+  text-transform: uppercase;
+  min-width: 190px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: $primary_color;
+  }
+}
+
+.btn_red {
+  background-color: $red;
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  color: #fefefe;
+  text-transform: uppercase;
+  min-width: 190px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: $pink;
+  }
+}

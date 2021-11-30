@@ -1,5 +1,6 @@
 @import "variables";
 @import "layouts";
+@import "buttons";
 
 body,
 h1,
@@ -12,7 +13,7 @@ p {
   font-family: "Raleway", sans-serif;
 }
 .clear {
-  clear: both;
+  clear: both; 
 }
 .logotipo {
   margin-top: -10px;
@@ -98,7 +99,7 @@ p {
         height: 20px;
       }
 
-      &:hover{
+      &:hover {
         background: $primary_color;
       }
     }
@@ -213,10 +214,29 @@ p {
         text-transform: uppercase;
         cursor: pointer;
 
-        &:hover{
+        &:hover {
           background-color: $primary_color;
         }
       }
     }
+  }
+}
+
+//Slider
+.hero_banner {
+  min-height: 500px;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center top; 
+
+  ul{
+    list-style: none;
+    display: flex;
+    gap:32px;
   }
 }

@@ -11,7 +11,7 @@
 if(have_posts()) :
     while (have_posts()) : the_post();
     get_template_part( 'template-parts/home/slider',);
-    get_template_part( 'template-parts/home/content',);
+    get_template_part( 'template-parts/home/session_one',);
 
 
     endwhile;	
