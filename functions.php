@@ -4,6 +4,7 @@
 require_once get_template_directory() . '/config/adding-features.php';
 require_once get_template_directory() . '/config/widget.php';
 require_once get_template_directory() . '/config/scripts.php';
+require_once get_template_directory() . '/config/acf.php';
 
 
 

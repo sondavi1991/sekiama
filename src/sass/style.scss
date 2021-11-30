@@ -1,0 +1,69 @@
+@import "variables";
+@import "layouts";
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Raleway", sans-serif;
+}
+.clear {
+  clear: both;
+}
+
+//Top Header
+.green_belt {
+  background-color: $primary_color;
+  padding: 10px 5px;
+
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .social_top {
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      span {
+        background-color: $pink;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        border-radius: 50%;
+        text-align: center;
+        float: left;
+        justify-content: center;
+        align-items: center;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        margin-right: 5px;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+
+        strong {
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

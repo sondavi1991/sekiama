@@ -17,6 +17,10 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 	<?php wp_head(); ?>
 </head>
@@ -24,7 +28,11 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div>
+
 	<header>
+		<?php get_template_part( 'template-parts/top/call-action-top',); ?>
+		<span class="clear"></span>
+
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
