@@ -14,6 +14,9 @@ p {
 .clear {
   clear: both;
 }
+.logotipo {
+  margin-top: -10px;
+}
 
 //Top Header
 .green_belt {
@@ -79,7 +82,7 @@ p {
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    color: #C4C4C4;
+    color: #c4c4c4;
 
     .btn_search_form {
       background: $primary_color;
@@ -101,6 +104,87 @@ p {
       border: 1px solid #e5e5e5;
       box-sizing: border-box;
       padding: 10px 20px;
+    }
+  }
+
+  .shop_login {
+    display: flex;
+    float: left;
+    margin-right: 30px;
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #000000;
+
+      strong {
+        font-weight: bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 15px;
+        color: #000000;
+        text-transform: initial;
+      }
+    }
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  .top_list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+}
+
+//Top menu
+.top_menu {
+  padding-top: 20px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    .current-menu-item {
+      background-color: $red;
+      border-radius: 10px 10px 0px 0px;
+      -webkit-border-radius: 10px 10px 0px 0px;
+      -moz-border-radius: 10px 10px 0px 0px;
+      -ms-border-radius: 10px 10px 0px 0px;
+      -o-border-radius: 10px 10px 0px 0px;
+      padding: 10px 5px;
+      margin-top: -10px;
+
+      a {
+        color: #fff !important;
+      }
+    }
+
+    li {
+      a {
+        text-decoration: none;
+        color: #000;
+        padding: 10px 5px;
+
+        &:hover {
+          background-color: $red;
+          color: #fff;
+          border-radius: 10px 10px 0px 0px;
+          -webkit-border-radius: 10px 10px 0px 0px;
+          -moz-border-radius: 10px 10px 0px 0px;
+          -ms-border-radius: 10px 10px 0px 0px;
+          -o-border-radius: 10px 10px 0px 0px;
+          padding: 10px 5px;
+        }
+      }
     }
   }
 }

@@ -53,14 +53,16 @@
     </div><!--header_form_top-->
   </div><!--container-->
 
-  <nav>
-    <?php
-      wp_nav_menu(
-        array(
-          'theme_location' => 'menu-1',
-          'menu_id'        => 'primary-menu',
-        )
-      );
-    ?>
-  </nav><!-- #site-navigation -->
+  <div class="container">
+    <nav class="top_menu">
+      <?php
+        wp_nav_menu(
+          array(
+            'theme_location' => 'menu-1',
+            'menu_id'        => 'primary-menu',
+          )
+        );
+      ?>
+    </nav><!-- top_menu -->
+  </div>
 </header>
