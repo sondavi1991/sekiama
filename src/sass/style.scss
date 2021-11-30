@@ -69,6 +69,38 @@ p {
 }
 
 .header_form_top {
-    padding-top: 28px;
-    padding-bottom: 10px;
+  padding-top: 28px;
+  padding-bottom: 10px;
+
+  //Top form
+  .top_form {
+    display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+
+    .btn_search_form {
+      background: $primary_color;
+      border-radius: 0px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      input[type="image"] {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    input[type="text"] {
+      width: 100%;
+      background: rgba(196, 196, 196, 0.21);
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      padding: 10px 20px;
+    }
+  }
 }
