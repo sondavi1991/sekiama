@@ -13,7 +13,7 @@ p {
   font-family: "Raleway", sans-serif;
 }
 .clear {
-  clear: both; 
+  clear: both;
 }
 .logotipo {
   margin-top: -10px;
@@ -232,11 +232,32 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-position: center top; 
+  background-position: center top;
 
-  ul{
+  ul {
     list-style: none;
     display: flex;
-    gap:32px;
+    gap: 32px;
   }
+}
+
+//Content
+.inner_space_section {
+  padding: 43px 0;
+}
+.session_icon {
+  display: flex;
+  justify-content: center;
+}
+.big_title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 42px;
+  text-align: center;
+  color: $primary_color;
+  text-transform: uppercase;
+  max-width: 665px;
+  margin: 0 auto;
+  padding-top: 13px;
 }
