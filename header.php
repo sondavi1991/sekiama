@@ -63,6 +63,12 @@
           )
         );
       ?>
+
+      <span class="btn_buy_here">
+        <a href="#">
+          <button><?php esc_html_e( 'Compre aqui', 'sekiama' ); ?></button>
+        </a>
+      </span>
     </nav><!-- top_menu -->
   </div>
 </header>

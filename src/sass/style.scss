@@ -85,16 +85,21 @@ p {
     color: #c4c4c4;
 
     .btn_search_form {
-      background: $primary_color;
+      background: $second_green;
       border-radius: 0px;
       width: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
 
       input[type="image"] {
         width: 20px;
         height: 20px;
+      }
+
+      &:hover{
+        background: $primary_color;
       }
     }
 
@@ -146,6 +151,9 @@ p {
 //Top menu
 .top_menu {
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 
   ul {
     list-style: none;
@@ -183,6 +191,30 @@ p {
           -ms-border-radius: 10px 10px 0px 0px;
           -o-border-radius: 10px 10px 0px 0px;
           padding: 10px 5px;
+        }
+      }
+    }
+  }
+
+  .btn_buy_here {
+    margin-left: 40px;
+    a {
+      button {
+        background-color: $second_green;
+        border: 0;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: center;
+        color: #fefefe;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover{
+          background-color: $primary_color;
         }
       }
     }
