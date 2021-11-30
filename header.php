@@ -27,38 +27,40 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div>
 
-	<header>
-		<?php get_template_part( 'template-parts/top/call-action-top',); ?>
-		<span class="clear"></span>
+<header>
+  <?php get_template_part( 'template-parts/top/call-action-top',); ?>
+  <span class="clear"></span>
 
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$sekiama_description = get_bloginfo( 'description', 'display' );
-			if ( $sekiama_description || is_customize_preview() ) :
-				?>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+  <div class="container">
+    <div class="row header_form_top">
+      <div class="logotipo col-lg-2"><!--logo-->
+        <?php 
+          $custom_logo_id = get_theme_mod( 'custom_logo' );
+          $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+          if ( has_custom_logo() ) {
+            echo '<a rel="home" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" href="' . site_url() . '">
+            <img alt="' . esc_attr( get_bloginfo( 'name' ) ) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" src="'. esc_url( $logo[0] ) .'">
+            </a>';
+          } else {
+              echo '<a href="' . site_url() . '">
+              <h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1>
+              </a>';
+        }?>
+      </div><!--logo -->
+        
+      <?php get_template_part( 'template-parts/top/search-top',); ?>
+    </div><!--header_form_top-->
+  </div><!--container-->
 
-		<nav>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header>
+  <nav>
+    <?php
+      wp_nav_menu(
+        array(
+          'theme_location' => 'menu-1',
+          'menu_id'        => 'primary-menu',
+        )
+      );
+    ?>
+  </nav><!-- #site-navigation -->
+</header>
