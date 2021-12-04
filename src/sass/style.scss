@@ -261,6 +261,18 @@ p {
   margin: 0 auto;
   padding-top: 13px;
 }
+.big_title_white{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  max-width: 665px;
+  margin: 0 auto;
+  padding-top: 13px;
+}
 .space35 {
   margin-bottom: 35px;
 }
@@ -284,6 +296,13 @@ p {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+}
+.sub_title_white{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff; 
 }
 .product_home_slider {
   h2 {
@@ -399,4 +418,10 @@ p {
 }
 .inner_bottom92 {
   margin-bottom: 92px;
+}
+
+//Testimonials
+.testimonials{
+  padding: 66px 0;
+  background-size: cover;
 }
