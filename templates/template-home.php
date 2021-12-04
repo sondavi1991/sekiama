@@ -12,7 +12,8 @@ if(have_posts()) :
     while (have_posts()) : the_post();
     get_template_part( 'template-parts/home/slider',);
     get_template_part( 'template-parts/home/session_one',);
-
+    get_template_part( 'template-parts/home/session_two_crumbs_product',);
+    get_template_part( 'template-parts/home/session_three_kits_product',);
 
     endwhile;	
 		
