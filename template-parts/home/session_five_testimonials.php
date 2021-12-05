@@ -1,5 +1,5 @@
 <?php 
-  $imageBgTestimonials = get_field( "_depoimentos_background", "options" );
+  $imageBgTestimonials = get_field( "_depoimentos_background", "option" );
 ?>
 <section class="testimonials" style="background-image:url('<?php echo esc_url($imageBgTestimonials['url']); ?>')">
   <div class="container">
@@ -8,15 +8,25 @@
 do dia-a-dia', 'sekiama' ); ?></h3>
 
     <div class="row">
-      <div class="col-lg-6">
-        <div>
-          <img src="" alt="">
-          <div>
-            <span></span>
-            <span></span>
-          </div>
+      <?php if( have_rows('depoimentos_repeater', 'option') ): ?>
+        <div class="row">
+          <?php while( have_rows('depoimentos_repeater', 'option') ): the_row(); 
+              $photoTestimonials = get_sub_field('_photo');
+              $descTestimonials = get_sub_field('_description');
+              $nameTestimonials = get_sub_field('_name');
+          ?>
+            <div class="col-lg-6">
+              <div>
+                <img src="<?php echo esc_url($photoTestimonials['url']); ?>" alt="<?php echo esc_attr($photoTestimonials['alt']); ?>">
+                <div>
+                  <span><?php echo $descTestimonials; ?></span>
+                  <span><?php echo $nameTestimonials; ?></span>
+                </div>
+              </div>
+            </div>
+          <?php endwhile; ?>
         </div>
-      </div>
+      <?php endif; ?>
     </div>
   </div>
 </section>
