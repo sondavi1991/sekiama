@@ -16,11 +16,11 @@ do dia-a-dia', 'sekiama' ); ?></h3>
               $nameTestimonials = get_sub_field('_name');
           ?>
             <div class="col-lg-6">
-              <div>
+              <div class="slider_testimonials">
                 <img src="<?php echo esc_url($photoTestimonials['url']); ?>" alt="<?php echo esc_attr($photoTestimonials['alt']); ?>">
                 <div>
-                  <span><?php echo $descTestimonials; ?></span>
-                  <span><?php echo $nameTestimonials; ?></span>
+                  <span class="descTestimonials"><?php echo $descTestimonials; ?></span>
+                  <span class="nameTestimonials"><?php echo $nameTestimonials; ?></span>
                 </div>
               </div>
             </div>
