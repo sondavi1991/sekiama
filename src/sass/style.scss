@@ -18,6 +18,13 @@ p {
 .logotipo {
   margin-top: -10px;
 }
+p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
 
 //Top Header
 .green_belt {
@@ -454,3 +461,25 @@ p {
     }
   }
 }
+.img_responsive{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.img_heart{
+  max-width: 480px;
+  margin: 0 auto;
+}
+.font36{
+  font-size: 36px;
+}
+.p_session_six{
+  h2{
+    margin-bottom: 20px;
+  }
+  p{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+

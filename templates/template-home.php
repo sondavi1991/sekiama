@@ -16,6 +16,8 @@ if(have_posts()) :
     get_template_part( 'template-parts/home/session_three_kits_product',);
     get_template_part( 'template-parts/home/session_four_cards',);
     get_template_part( 'template-parts/home/session_five_testimonials',);
+    get_template_part( 'template-parts/home/session_six',);
+    get_template_part( 'template-parts/home/session_seven',);
 
     endwhile;	
 		
