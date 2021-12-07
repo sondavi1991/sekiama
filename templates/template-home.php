@@ -18,6 +18,7 @@ if(have_posts()) :
     get_template_part( 'template-parts/home/session_five_testimonials',);
     get_template_part( 'template-parts/home/session_six',);
     get_template_part( 'template-parts/home/session_seven',);
+    get_template_part( 'template-parts/home/session_eight_instagram',);
 
     endwhile;	
 		
