@@ -7,6 +7,6 @@
   <h3 class="sub_title text_center">Nosso Instagram está cheio de novidades para você acompanhar a Sekiama diariamente</h3>
 
   <div>
-    <?php echo $shortCodeInstagram; ?>
+    <?php echo do_shortcode( "$shortCodeInstagram" ); ?>
   </div>
 </section>
