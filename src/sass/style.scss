@@ -496,18 +496,47 @@ p {
     }
   }
 }
-.space10{
+.space10 {
   height: 10px;
   display: block;
 }
-.big_card_call_action{
+.big_card_call_action {
   background-size: cover;
   position: relative;
   height: 100%;
 
-  button{
+  button {
     position: absolute;
     bottom: 120px;
     right: 160px;
   }
+}
+.bottom29{
+  margin-bottom: 29px;
+}
+.wrap_ask {
+  text-align: center;
+
+  h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 19px;
+    margin-top: 19px;
+  }
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+.wrapper_questions{
+  display: block;
+  text-align: center;
+  margin-top: 40px; 
 }
