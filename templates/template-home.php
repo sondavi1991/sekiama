@@ -20,6 +20,8 @@ if(have_posts()) :
     get_template_part( 'template-parts/home/session_seven',);
     get_template_part( 'template-parts/home/session_eight_instagram',);
     get_template_part( 'template-parts/home/session_nine_asks',);
+    get_template_part( 'template-parts/home/session_ten_partners',);
+    get_template_part( 'template-parts/home/session_eleven_calls',);
 
     endwhile;	
 		
