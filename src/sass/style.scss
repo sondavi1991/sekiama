@@ -604,7 +604,79 @@ p {
   }
 }
 
-footer{
-  background: #AC2421;
-  padding: 10px 0;
+footer {
+  background: #ac2421;
+  padding: 30px 0;
+
+  .title_menu_footer {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 17px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .menu_footer {
+    ul {
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin-bottom: 6px;
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+
+  .icons_footer {
+    margin-top: 10px;
+    li {
+      margin-bottom: 13px !important;
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+
+    .icon_insta {
+      background: #ee1b67;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 15px;
+      }
+    }
+  }
+
+  .logo_footer {
+    text-align: center;
+
+    p {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 11px;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 15px;
+    }
+  }
 }
