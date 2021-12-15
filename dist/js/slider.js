@@ -42,3 +42,18 @@ var glides = new Glide('.glide_testimonials', {
   }
 });
 glides.mount();
+
+var glide = new Glide('.glide_partners', {
+  type: 'carousel',
+  focusAt: 'center',
+  perView: 3,
+  breakpoints: {
+    1024: {
+      perView: 2
+    },
+    600: {
+      perView: 1
+    }
+  }
+});
+glide.mount();
