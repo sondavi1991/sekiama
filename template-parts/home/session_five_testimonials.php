@@ -7,26 +7,28 @@
     <h3 class="sub_title_white text_center"><?php esc_html_e( 'Confira o feedback de quem adquiriu as delícias da Sekiama nas refeições 
 do dia-a-dia', 'sekiama' ); ?></h3>
 
-    <div class="row">
-      <?php if( have_rows('depoimentos_repeater', 'option') ): ?>
-        <div class="row">
-          <?php while( have_rows('depoimentos_repeater', 'option') ): the_row(); 
-              $photoTestimonials = get_sub_field('_photo');
-              $descTestimonials = get_sub_field('_description');
-              $nameTestimonials = get_sub_field('_name');
-          ?>
-            <div class="col-lg-6">
-              <div class="slider_testimonials">
-                <img src="<?php echo esc_url($photoTestimonials['url']); ?>" alt="<?php echo esc_attr($photoTestimonials['alt']); ?>">
-                <div>
-                  <span class="descTestimonials"><?php echo $descTestimonials; ?></span>
-                  <span class="nameTestimonials"><?php echo $nameTestimonials; ?></span>
+    <div class="glide_testimonials">
+      <div class="glide__track" data-glide-el="track">
+        <?php if( have_rows('depoimentos_repeater', 'option') ): ?>
+          <div class="glide__slides">
+            <?php while( have_rows('depoimentos_repeater', 'option') ): the_row(); 
+                $photoTestimonials = get_sub_field('_photo');
+                $descTestimonials = get_sub_field('_description');
+                $nameTestimonials = get_sub_field('_name');
+            ?>
+              <div class="glide__slide">
+                <div class="slider_testimonials">
+                  <img src="<?php echo esc_url($photoTestimonials['url']); ?>" alt="<?php echo esc_attr($photoTestimonials['alt']); ?>">
+                  <div>
+                    <span class="descTestimonials"><?php echo $descTestimonials; ?></span>
+                    <span class="nameTestimonials"><?php echo $nameTestimonials; ?></span>
+                  </div>
                 </div>
               </div>
-            </div>
-          <?php endwhile; ?>
-        </div>
-      <?php endif; ?>
+            <?php endwhile; ?>
+          </div>
+        <?php endif; ?>
+      </div>
     </div>
   </div>
 </section>
