@@ -7,14 +7,14 @@
 ?>
 <section class="container inner_bottom92">
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-xs-12">
       <div class="card" style="background-image:url('<?php echo esc_url($imageLeft['url']); ?>')">
         <a href="<?php echo $urlImageLeft; ?>" target="_blank">
           <button><?php esc_html_e( 'Eu quero!', 'sekiama' ); ?></button>
         </a>
       </div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-xs-12">
       <div class="card" style="background-image:url('<?php echo esc_url($imageRight['url']); ?>')">
         <a href="<?php echo $urlImageRight; ?>" target="_blank">
           <button><?php esc_html_e( 'Saber mais', 'sekiama' ); ?></button>

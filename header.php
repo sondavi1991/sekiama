@@ -33,28 +33,38 @@
   <span class="clear"></span>
 
   <div class="container">
-    <div class="row header_form_top">
-      <div class="logotipo col-lg-2"><!--logo-->
-        <?php 
-          $custom_logo_id = get_theme_mod( 'custom_logo' );
-          $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-          if ( has_custom_logo() ) {
-            echo '<a rel="home" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" href="' . site_url() . '">
-            <img alt="' . esc_attr( get_bloginfo( 'name' ) ) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" src="'. esc_url( $logo[0] ) .'">
-            </a>';
-          } else {
-              echo '<a href="' . site_url() . '">
-              <h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1>
+    <div class="wrapper header_form_top">
+      <div class="row justify-content-center-mobile">
+        <div class="logotipo col-lg-2 col-xs-12"><!--logo-->
+          <?php 
+            $custom_logo_id = get_theme_mod( 'custom_logo' );
+            $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+            if ( has_custom_logo() ) {
+              echo '<a rel="home" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" href="' . site_url() . '">
+              <img alt="' . esc_attr( get_bloginfo( 'name' ) ) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" src="'. esc_url( $logo[0] ) .'">
               </a>';
-        }?>
-      </div><!--logo -->
-        
-      <?php get_template_part( 'template-parts/top/search-top',); ?>
+            } else {
+                echo '<a href="' . site_url() . '">
+                <h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1>
+                </a>';
+          }?>
+        </div><!--logo -->
+          
+        <?php get_template_part( 'template-parts/top/search-top',); ?>
+      </div>
     </div><!--header_form_top-->
   </div><!--container-->
 
   <div class="container">
-    <nav class="top_menu">
+    <div class="menu_mobile" onclick="openBtnMobile()">
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="top_menu" id="openMenu">
       <?php
         wp_nav_menu(
           array(

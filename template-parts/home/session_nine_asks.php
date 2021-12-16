@@ -1,6 +1,7 @@
 <section class="container inner_space_section">
-  <span class="session_icon"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/icon_details.svg"></span>
-  <h2 class="big_title bottom29"><?php esc_html_e( 'Perguntas Frequentes', 'sekiama' ); ?></h2>
+  <div class="wrapper">
+    <span class="session_icon"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/icon_details.svg"></span>
+    <h2 class="big_title bottom29"><?php esc_html_e( 'Perguntas Frequentes', 'sekiama' ); ?></h2>
 
   <div class="row">
     <div class="col-lg-6">
@@ -38,4 +39,6 @@
   <a class="wrapper_questions" href="#">
     <button class="btn_questions"><?php esc_html_e( 'Tirar mais', 'sekiama' ); ?><br><?php esc_html_e( 'dúvidas', 'sekiama' ); ?></button>
   </a>
+
+  </div><!--wrapper-->
 </section>

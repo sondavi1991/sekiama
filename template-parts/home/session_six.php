@@ -1,12 +1,12 @@
 <section class="container inner_space_section">
   <div class="row align-items-center">
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-xs-12">
       <div class="img_heart">
         <img class="img_responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/heart.png" alt="Amo Sekiama">
       </div>
       
     </div>
-    <div class="col-lg-6 p_session_six">
+    <div class="col-lg-6 col-xs-12 p_session_six">
       <span class="session_icon"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/icon_details.svg"></span>
       <h2 class="big_title font36"><?php esc_html_e( 'Ingredientes cuidadosamente selecionados', 'sekiama' ); ?></h2>
 

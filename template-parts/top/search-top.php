@@ -1,8 +1,8 @@
-<div class="col-lg-6">
+<div class="col-lg-6 col-xs-12">
   <?php get_search_form( ); ?>
 </div>
 
-<div class="col-lg-4">
+<div class="col-lg-4 col-xs-12">
 
   <div class="shop_login">
     <img src="<?php echo get_template_directory_uri(); ?>/dist/images/bem-vindo.svg">

@@ -3,9 +3,6 @@ var glide = new Glide('.glide', {
   focusAt: 'center',
   perView: 3,
   breakpoints: {
-    1024: {
-      perView: 2
-    },
     600: {
       perView: 1
     }
@@ -18,9 +15,6 @@ var glides = new Glide('.glides', {
   focusAt: 'center',
   perView: 3,
   breakpoints: {
-    1024: {
-      perView: 2
-    },
     600: {
       perView: 1
     }
@@ -33,9 +27,6 @@ var glides = new Glide('.glide_testimonials', {
   perView: 2,
   autoplay: 2000,
   breakpoints: {
-    1024: {
-      perView: 2
-    },
     600: {
       perView: 1
     }
@@ -48,9 +39,6 @@ var glide = new Glide('.glide_partners', {
   focusAt: 'center',
   perView: 3,
   breakpoints: {
-    1024: {
-      perView: 2
-    },
     600: {
       perView: 1
     }

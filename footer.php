@@ -4,30 +4,32 @@
 ?>
 	<div style="background-image:url('<?php echo esc_url($bgNews['url']); ?>')" class="footer_newsletter">
 		<div class="container">
-			<h3>Receba nossas receitas & dicas</h3>
-			<p>E faça parte do time de farofeiros Sekiama</p>
+			<div class="wrapper">
+				<h3>Receba nossas receitas & dicas</h3>
+				<p>E faça parte do time de farofeiros Sekiama</p>
 
-			<form>
-				<div class="inputs_inners">
-					<input type="text" name="nome" placeholder="Nome">
-					<input type="email" name="email" placeholder="E-mail de contato">
-				</div>
-				<input class="btn_green adjust_btn_news" type="submit" value="Cadastrar">
-			</form>
+				<form>
+					<div class="inputs_inners">
+						<input type="text" name="nome" placeholder="Nome">
+						<input type="email" name="email" placeholder="E-mail de contato">
+					</div>
+					<input class="btn_green adjust_btn_news" type="submit" value="Cadastrar">
+				</form>
+			</div>
 		</div>
 	</div>
 
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5">
+				<div class="col-lg-5 col-xs-12">
 					<?php  
 						if(is_active_sidebar('footer_menu_1')) {
 							dynamic_sidebar('footer_menu_1');
 						}
 					?>
 				</div>
-				<div class="col-lg-2">
+				<div class="col-lg-2 col-xs-12">
 					<?php  
 						if(is_active_sidebar('footer_menu_2')) {
 							dynamic_sidebar('footer_menu_2');
@@ -48,14 +50,14 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-2">
+				<div class="col-lg-2 col-xs-12">
 					<?php  
 						if(is_active_sidebar('footer_menu_3')) {
 							dynamic_sidebar('footer_menu_3');
 						}
 					?>
 				</div>
-				<div class="col-lg-2">
+				<div class="col-lg-2 col-xs-12">
 					<?php  
 						if(is_active_sidebar('footer_menu_4')) {
 							dynamic_sidebar('footer_menu_4');
@@ -64,7 +66,7 @@
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="logo_footer">
 					<a href="https://www.otimaideia.com.br" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo_otima_ideia.svg">
